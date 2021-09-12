@@ -1,0 +1,433 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+:root {
+  --themecolor: #46919a;
+  --hovercolor: rgb(145, 142, 142);
+  --bgcolor: #343338;
+  --textcolor: rgb(184, 182, 182);
+  --bordercolor: #d2d0d3;
+  --pagebackground: linear-gradient(to right, rgb(0, 0, 0) , rgb(14, 14, 13));
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+body
+{
+  background: #BFD8B8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ /* min-height: 70vh;*/
+  /*max-width:1000vh;*/
+
+}
+
+
+.container
+{
+    height: 12in !important;
+    width: 8.5in !important;
+   position: relative;
+   display: grid;
+   grid-template-columns: 1.2fr 2fr;
+   box-shadow: 0 35px 55px rgba(0, 0, 0, 1.0);
+}
+
+.container .left_side
+{
+  position: relative;
+  background:#171010 /*#003147*/;
+  padding: 0px 40px 0px 40px;  
+}
+.profiletext
+{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 5px;
+  border-bottom: 2px solid white; 
+}
+
+.profiletext .imgbx 
+{
+  position: relative;
+  border-radius: 50%;
+  height: 200px;
+  width: 200px;
+  overflow: hidden;
+  margin-top: 15px;
+}
+
+.profiletext .imgbx img
+{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/*(Image end)*/
+
+.profiletext h3
+{
+   color: whitesmoke;
+   font-size: 25px;
+   margin-top: 10px;
+   margin-bottom: 5px;
+   text-transform: uppercase;
+   text-align: center;
+   font-weight: 500;
+   line-height: 1.4;
+ }
+
+ .profiletext h4
+ {
+  color: whitesmoke;
+  font-size: 20px;
+  margin-bottom: 10px;
+ }
+
+ .profiletext h3 span 
+ {
+    font-size: 0.9em;
+    font-weight: 300;
+ }
+
+ .contactinfo
+ {
+  padding-top: 40px;
+  text-align: center;
+ }
+
+ .title{
+  color: whitesmoke;
+  text-transform: uppercase;
+  font-weight: 500;
+  letter-spacing: 1px;
+  margin-bottom: 20px; 
+ }
+ .text a{
+  color: whitesmoke;
+  text-decoration: none;
+ }
+
+ .text a:hover{
+  text-decoration: underline;
+  color: red;
+ }
+
+.contactinfo ul
+{
+  position: relative;
+  text-align: left;
+}
+
+.contactinfo ul li
+{ 
+  position: relative;
+  list-style: none;
+  margin: 10px 0;
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 1.1em;
+}
+
+.contactinfo ul li .icon
+{
+   display:inline-block;
+   width: 30px;
+   font-size: 15px;
+   color: red;
+}
+
+.contactinfo ul li span
+{
+  color: whitesmoke;
+  font-weight: 300;
+}
+
+
+/*education part start*/
+
+.education
+{
+margin-top: 10px;
+ text-align: center;
+}
+/*.education h3{
+  color: whitesmoke;
+  text-transform: uppercase;
+  margin-top: 30px;
+  margin-bottom: 15px;
+}*/
+
+.ed{
+  color: whitesmoke;
+  text-transform: uppercase;
+  margin-top: 30px;
+  margin-bottom: 15px;
+  font-weight: 500;
+  font-size: 19px;
+}
+
+.education li
+{
+   margin-bottom: 20px;
+  text-align: left;
+  font-size: 1.2em;
+}
+
+.education h4{
+  color: red;
+  font-weight: 500;
+  padding-top: 10px;
+  margin-bottom: 5px;
+}
+
+.gap{
+  margin-top: 25px;
+}
+
+/*.education h5{
+  margin-bottom: 5px;
+}*/
+.education h5.nth-child(2)
+{
+  color: white;
+  font-weight: 400;
+}
+
+.education h5{
+  color: white;
+  font-weight: 300;
+  letter-spacing: 1px;
+  font-size: 0.8em;
+  text-transform: uppercase;
+}
+
+
+.container .right_side
+{
+  position: relative;
+  background: whitesmoke;
+  padding: 40px;
+}
+
+.language{
+   padding-top: 25px;
+  text-align: center;
+}
+
+.language .precent
+{
+  position: relative;
+  width: 100%;
+  height: 6px;
+  background:whitesmoke; ;
+  display: block;
+  margin-top: 3px;
+  position: -5px;
+}
+
+.language .precent div{
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  background:red;
+}
+
+/*color codes*/
+
+/*Black: #171010
+HEadings: #630000
+Red: #FF2626*/
+
+.language ul{
+  text-align: left;
+  color: whitesmoke;
+  font-weight: 500;
+  font-size: 1em;
+}
+
+/*Right side start*/
+
+.container .right_side
+{
+  position: relative;
+  background: #E4EFE7;
+  padding: 40px;
+}
+
+.about{
+  margin-bottom: 30px;
+}
+
+.about:last-child
+{
+  margin-bottom: 0px;
+}
+/*profile*/
+.title2{
+  color: #630000;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 10px;
+}
+
+
+p{
+  color:black;
+}
+
+.about .box
+{
+  display: flex;
+  flex-direction: row;
+  margin: 20px 0;
+}
+
+.about .box .year_company{
+ min-width: 150px;
+}
+
+.about .box .year_company h5
+{
+  text-transform: uppercase;
+  color: black;
+  font-weight: 500;
+}
+
+.about .box .text h4
+{
+  text-transform: uppercase;
+  color: red;
+  font-size: 16px;
+}
+
+/*Skills part*/
+
+.skills .box
+{
+  position: relative;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 150px 1fr;
+  justify-content: center;
+  align-items: center;
+}
+
+.skills .box h4
+{
+  text-transform: uppercase;
+  color: black;
+  font-weight: 500;
+}
+
+.skills .box .percent
+{
+  position: relative;
+  width: 100%;
+  height: 6px;
+  background:black; /*#03a9f4;*/
+}
+ 
+.skills .box .percent div{
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  background:red;
+}
+
+.interest ul
+{
+  display: grid;
+  grid-template-columns:1fr 1fr;
+}
+
+.interest ul li{
+  list-style: none;
+  color: black;
+  font- width: 500;
+  margin: 10px 0;
+}
+
+.interest ul li .fa{
+  color: red;
+  font-size: 18px;
+  width: 20px;
+  display:inline-block;
+}
+.i{
+  margin-left: 10px;
+}
+
+
+.lang_skill
+{
+  margin-bottom:5px;
+}
+.ref .referrenc
+{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+}
+
+.referrences
+{
+  margin-bottom: 10px;
+    margin-right: 10px;
+    background-color: #171010;
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 5px;
+    color: whitesmoke;
+}
+
+.re_deg{
+  font-size: 14px;
+}
+.re_mail{
+  font-size: 14px;
+}
+
+.referrences .re_mail a{
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+.referrences .re_mail a:hover{
+  text-decoration: underline;
+  color:red;
+}
+/*@media(max-width: 1000px)
+{
+
+}*/
+
+@media print {
+  html {
+    height: 11in;
+    width: 8.5in;
+    overflow: hidden;
+  }
+
+  body {
+    margin: 0;
+  }
+
+  .resume {
+    width: 100%;
+    box-shadow: none;
+  }
+}
